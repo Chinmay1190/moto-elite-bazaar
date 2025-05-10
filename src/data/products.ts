@@ -1311,6 +1311,11 @@ export const getFeaturedProducts = () => productsData.filter(product => product.
 // Function to get product by slug
 export const getProductBySlug = (slug: string) => productsData.find(product => product.slug === slug);
 
+// Function to get products by category
+export const getProductsByCategory = (category: string) => {
+  return productsData.filter(product => product.category === category);
+};
+
 // Function to get related products - same category or brand, excluding current product
 export const getRelatedProducts = (product: Product) => {
   return productsData
