@@ -1,4 +1,3 @@
-
 import { Product, Category, Brand } from "../types";
 
 export const categories: Category[] = [
@@ -526,17 +525,9 @@ const productsData: Product[] = [
       weight: "148 kg",
       fuelCapacity: "14 liters"
     }
-  }
-];
-
-// Generate additional products to reach 60+
-const generateAdditionalProducts = (): Product[] => {
-  const additionalProducts: Product[] = [];
-  let currentId = 23;
-  
-  // Additional KTM products
-  additionalProducts.push({
-    id: currentId++,
+  },
+  {
+    id: 23,
     name: "KTM 250 Duke",
     price: 225000,
     image: "https://images.unsplash.com/photo-1607197109166-a7c7697250b8?w=800&h=600&fit=crop",
@@ -554,10 +545,9 @@ const generateAdditionalProducts = (): Product[] => {
       weight: "158 kg",
       fuelCapacity: "13.4 liters"
     }
-  });
-  
-  additionalProducts.push({
-    id: currentId++,
+  },
+  {
+    id: 24,
     name: "KTM 125 Duke",
     price: 165000,
     image: "https://images.unsplash.com/photo-1611241523652-a531e5fc5952?w=800&h=600&fit=crop",
@@ -575,11 +565,9 @@ const generateAdditionalProducts = (): Product[] => {
       weight: "142 kg",
       fuelCapacity: "10.2 liters"
     }
-  });
-  
-  // Additional Bajaj products
-  additionalProducts.push({
-    id: currentId++,
+  },
+  {
+    id: 25,
     name: "Bajaj Pulsar 220F",
     price: 131000,
     image: "https://images.unsplash.com/photo-1613663809767-f51d10308acd?w=800&h=600&fit=crop",
@@ -597,12 +585,9 @@ const generateAdditionalProducts = (): Product[] => {
       weight: "155 kg",
       fuelCapacity: "15 liters"
     }
-  });
-  
-  // Add more products for each brand
-  // Royal Enfield
-  additionalProducts.push({
-    id: currentId++,
+  },
+  {
+    id: 26,
     name: "Royal Enfield Meteor 350",
     price: 205000,
     image: "https://images.unsplash.com/photo-1614545329054-b0f671931b78?w=800&h=600&fit=crop",
@@ -620,50 +605,91 @@ const generateAdditionalProducts = (): Product[] => {
       weight: "191 kg",
       fuelCapacity: "15 liters"
     }
-  });
-  
-  // Continue adding products for each brand to reach 60+
-  // ... (additional product generation code)
-
-  return additionalProducts;
-};
-
-const allProducts: Product[] = [...productsData, ...generateAdditionalProducts()];
-
-export const getProducts = (): Product[] => {
-  return allProducts;
-};
-
-export const getProductById = (id: number): Product | undefined => {
-  return allProducts.find(product => product.id === id);
-};
-
-export const getProductBySlug = (slug: string): Product | undefined => {
-  return allProducts.find(product => product.slug === slug);
-};
-
-export const getFeaturedProducts = (): Product[] => {
-  return allProducts.filter(product => product.featured);
-};
-
-export const getProductsByCategory = (category: string): Product[] => {
-  return allProducts.filter(product => 
-    product.category.toLowerCase() === category.toLowerCase()
-  );
-};
-
-export const getProductsByBrand = (brand: string): Product[] => {
-  return allProducts.filter(product => 
-    product.brand.toLowerCase() === brand.toLowerCase()
-  );
-};
-
-export const searchProducts = (query: string): Product[] => {
-  const lowerCaseQuery = query.toLowerCase();
-  return allProducts.filter(product => 
-    product.name.toLowerCase().includes(lowerCaseQuery) || 
-    product.brand.toLowerCase().includes(lowerCaseQuery) || 
-    product.category.toLowerCase().includes(lowerCaseQuery) ||
-    product.description.toLowerCase().includes(lowerCaseQuery)
-  );
-};
+  },
+  {
+    id: 27,
+    name: "Triumph Tiger 900",
+    price: 1350000,
+    image: "https://images.unsplash.com/photo-1581092918056-0c4c1e9f547b?w=800&h=600&fit=crop",
+    category: "Adventure",
+    brand: "Triumph",
+    description: "The Tiger 900 is Triumph's flagship adventure motorcycle with excellent off-road capability.",
+    rating: 4.7,
+    discountPercentage: 5,
+    available: true,
+    slug: "triumph-tiger-900",
+    specifications: {
+      engine: "888cc, Inline-3",
+      power: "95 bhp",
+      torque: "87 Nm",
+      topSpeed: "200 km/h",
+      weight: "201 kg",
+      fuelCapacity: "20 liters"
+    }
+  },
+  {
+    id: 28,
+    name: "BMW R 1250 GS",
+    price: 2050000,
+    image: "https://images.unsplash.com/photo-1605864686261-c2926d947d80?w=800&h=600&fit=crop",
+    category: "Adventure",
+    brand: "BMW",
+    description: "The R 1250 GS is the benchmark for adventure touring with legendary reliability.",
+    rating: 4.9,
+    available: true,
+    slug: "bmw-r-1250-gs",
+    featured: true,
+    specifications: {
+      engine: "1254cc, Boxer-Twin",
+      power: "136 bhp",
+      torque: "143 Nm",
+      topSpeed: "220 km/h",
+      weight: "249 kg",
+      fuelCapacity: "20 liters"
+    }
+  },
+  {
+    id: 29,
+    name: "Ducati Monster",
+    price: 1180000,
+    image: "https://images.unsplash.com/photo-1609630875171-b1321377ee65?w=800&h=600&fit=crop",
+    category: "Naked",
+    brand: "Ducati",
+    description: "The Monster is an iconic naked bike with Italian flair and performance.",
+    rating: 4.6,
+    discountPercentage: 7,
+    available: true,
+    slug: "ducati-monster",
+    specifications: {
+      engine: "937cc, L-Twin",
+      power: "111 bhp",
+      torque: "93 Nm",
+      topSpeed: "230 km/h",
+      weight: "188 kg",
+      fuelCapacity: "14 liters"
+    }
+  },
+  {
+    id: 30,
+    name: "Honda CB300R",
+    price: 255000,
+    image: "https://images.unsplash.com/photo-1558981806-ec527fa84c39?w=800&h=600&fit=crop",
+    category: "Naked",
+    brand: "Honda",
+    description: "The CB300R is a lightweight naked sports bike with nimble handling.",
+    rating: 4.2,
+    available: true,
+    slug: "honda-cb300r",
+    specifications: {
+      engine: "286cc, Single-Cylinder",
+      power: "30 bhp",
+      torque: "27.5 Nm",
+      topSpeed: "140 km/h",
+      weight: "147 kg",
+      fuelCapacity: "10 liters"
+    }
+  },
+  {
+    id: 31,
+    name: "Yamaha Tenere 700",
+    price: 980000,
