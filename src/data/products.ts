@@ -1,3 +1,4 @@
+
 import { Product, Category, Brand } from "../types";
 
 export const categories: Category[] = [
@@ -693,3 +694,626 @@ const productsData: Product[] = [
     id: 31,
     name: "Yamaha Tenere 700",
     price: 980000,
+    image: "https://images.unsplash.com/photo-1619771914272-e3c1ba17ba4d?w=800&h=600&fit=crop",
+    category: "Adventure",
+    brand: "Yamaha",
+    description: "The Tenere 700 is a capable adventure motorcycle built for off-road exploration.",
+    rating: 4.7,
+    available: true,
+    slug: "yamaha-tenere-700",
+    specifications: {
+      engine: "689cc, Parallel-Twin",
+      power: "72 bhp",
+      torque: "68 Nm",
+      topSpeed: "190 km/h",
+      weight: "204 kg",
+      fuelCapacity: "16 liters"
+    }
+  },
+  {
+    id: 32,
+    name: "TVS Ronin",
+    price: 149000,
+    image: "https://images.unsplash.com/photo-1611323532760-0d090ad077f7?w=800&h=600&fit=crop",
+    category: "Modern Classic",
+    brand: "TVS",
+    description: "The TVS Ronin is a neo-retro motorcycle with modern features and classic styling.",
+    rating: 4.3,
+    available: true,
+    slug: "tvs-ronin",
+    specifications: {
+      engine: "225.9cc, Single-Cylinder",
+      power: "20.4 bhp",
+      torque: "19.93 Nm",
+      topSpeed: "125 km/h",
+      weight: "160 kg",
+      fuelCapacity: "14 liters"
+    }
+  },
+  {
+    id: 33,
+    name: "Suzuki Katana",
+    price: 1380000,
+    image: "https://images.unsplash.com/photo-1571646750134-a6efcbf11bff?w=800&h=600&fit=crop",
+    category: "Sport",
+    brand: "Suzuki",
+    description: "The Katana features distinctive styling with sharp lines inspired by the legendary samurai sword.",
+    rating: 4.6,
+    discountPercentage: 4,
+    available: true,
+    slug: "suzuki-katana",
+    specifications: {
+      engine: "999cc, Inline-4",
+      power: "150 bhp",
+      torque: "108 Nm",
+      topSpeed: "250 km/h",
+      weight: "215 kg",
+      fuelCapacity: "12 liters"
+    }
+  },
+  {
+    id: 34,
+    name: "Kawasaki Versys 650",
+    price: 730000,
+    image: "https://images.unsplash.com/photo-1611241524751-9e66ded69a79?w=800&h=600&fit=crop",
+    category: "Adventure",
+    brand: "Kawasaki",
+    description: "The Versys 650 is a versatile adventure-touring motorcycle perfect for daily commuting and long rides.",
+    rating: 4.5,
+    available: true,
+    slug: "kawasaki-versys-650",
+    specifications: {
+      engine: "649cc, Parallel-Twin",
+      power: "66 bhp",
+      torque: "61 Nm",
+      topSpeed: "185 km/h",
+      weight: "216 kg",
+      fuelCapacity: "21 liters"
+    }
+  },
+  {
+    id: 35,
+    name: "Triumph Trident 660",
+    price: 860000,
+    image: "https://images.unsplash.com/photo-1614297305129-69f584333034?w=800&h=600&fit=crop",
+    category: "Naked",
+    brand: "Triumph",
+    description: "The Trident 660 is a middleweight roadster with a triple-cylinder engine offering excellent balance.",
+    rating: 4.6,
+    available: true,
+    slug: "triumph-trident-660",
+    specifications: {
+      engine: "660cc, Inline-3",
+      power: "80 bhp",
+      torque: "64 Nm",
+      topSpeed: "210 km/h",
+      weight: "189 kg",
+      fuelCapacity: "14 liters"
+    }
+  },
+  {
+    id: 36,
+    name: "BMW F 900 R",
+    price: 1050000,
+    image: "https://images.unsplash.com/photo-1611241523951-45dc17b0a864?w=800&h=600&fit=crop",
+    category: "Naked",
+    brand: "BMW",
+    description: "The F 900 R is a dynamic roadster with sporty character and impressive handling.",
+    rating: 4.5,
+    discountPercentage: 3,
+    available: true,
+    slug: "bmw-f-900-r",
+    specifications: {
+      engine: "895cc, Parallel-Twin",
+      power: "105 bhp",
+      torque: "92 Nm",
+      topSpeed: "215 km/h",
+      weight: "211 kg",
+      fuelCapacity: "13 liters"
+    }
+  },
+  {
+    id: 37,
+    name: "Ducati Multistrada V4",
+    price: 1950000,
+    image: "https://images.unsplash.com/photo-1609630875171-b1321377ee65?w=800&h=600&fit=crop",
+    category: "Adventure",
+    brand: "Ducati",
+    description: "The Multistrada V4 combines sports bike performance with touring comfort and off-road capability.",
+    rating: 4.9,
+    available: true,
+    slug: "ducati-multistrada-v4",
+    featured: true,
+    specifications: {
+      engine: "1158cc, V4",
+      power: "170 bhp",
+      torque: "125 Nm",
+      topSpeed: "250 km/h",
+      weight: "215 kg",
+      fuelCapacity: "22 liters"
+    }
+  },
+  {
+    id: 38,
+    name: "Harley-Davidson Street Glide",
+    price: 2150000,
+    image: "https://images.unsplash.com/photo-1613663863789-6ace3583bde8?w=800&h=600&fit=crop",
+    category: "Touring",
+    brand: "Harley-Davidson",
+    description: "The Street Glide is a classic American touring motorcycle built for long highway journeys.",
+    rating: 4.8,
+    available: true,
+    slug: "harley-davidson-street-glide",
+    specifications: {
+      engine: "1868cc, V-Twin",
+      power: "90 bhp",
+      torque: "160 Nm",
+      topSpeed: "170 km/h",
+      weight: "362 kg",
+      fuelCapacity: "22.7 liters"
+    }
+  },
+  {
+    id: 39,
+    name: "Royal Enfield Hunter 350",
+    price: 149000,
+    image: "https://images.unsplash.com/photo-1633328162553-56233c0135d5?w=800&h=600&fit=crop",
+    category: "Retro",
+    brand: "Royal Enfield",
+    description: "The Hunter 350 combines classic design with agile handling for urban riding.",
+    rating: 4.3,
+    available: true,
+    slug: "royal-enfield-hunter-350",
+    specifications: {
+      engine: "349cc, Single-Cylinder",
+      power: "20.2 bhp",
+      torque: "27 Nm",
+      topSpeed: "115 km/h",
+      weight: "181 kg",
+      fuelCapacity: "13 liters"
+    }
+  },
+  {
+    id: 40,
+    name: "Bajaj Chetak Electric",
+    price: 140000,
+    image: "https://images.unsplash.com/photo-1633528863741-fbddce591323?w=800&h=600&fit=crop",
+    category: "Electric",
+    brand: "Bajaj",
+    description: "The Chetak Electric is a modern revival of the iconic scooter with zero emissions.",
+    rating: 4.3,
+    discountPercentage: 5,
+    available: true,
+    slug: "bajaj-chetak-electric",
+    specifications: {
+      engine: "Electric Motor",
+      power: "4.08 kW",
+      torque: "16 Nm",
+      topSpeed: "70 km/h",
+      weight: "120 kg",
+      batteryRange: "95 km"
+    }
+  },
+  {
+    id: 41,
+    name: "Kawasaki Z900",
+    price: 850000,
+    image: "https://images.unsplash.com/photo-1611241524610-dac8323ab272?w=800&h=600&fit=crop",
+    category: "Naked",
+    brand: "Kawasaki",
+    description: "The Z900 is a powerful naked motorcycle with aggressive styling and impressive performance.",
+    rating: 4.7,
+    available: true,
+    slug: "kawasaki-z900",
+    specifications: {
+      engine: "948cc, Inline-4",
+      power: "125 bhp",
+      torque: "98.6 Nm",
+      topSpeed: "245 km/h",
+      weight: "212 kg",
+      fuelCapacity: "17 liters"
+    }
+  },
+  {
+    id: 42,
+    name: "Honda CB650R",
+    price: 870000,
+    image: "https://images.unsplash.com/photo-1551449426-68d95f659d41?w=800&h=600&fit=crop",
+    category: "Naked",
+    brand: "Honda",
+    description: "The CB650R is a middleweight naked motorcycle with a smooth four-cylinder engine and neo-retro styling.",
+    rating: 4.6,
+    available: true,
+    slug: "honda-cb650r",
+    specifications: {
+      engine: "649cc, Inline-4",
+      power: "94 bhp",
+      torque: "63 Nm",
+      topSpeed: "225 km/h",
+      weight: "202 kg",
+      fuelCapacity: "15.4 liters"
+    }
+  },
+  {
+    id: 43,
+    name: "TVS Apache RTR 160 4V",
+    price: 119000,
+    image: "https://images.unsplash.com/photo-1633528859053-9d208c4b0b12?w=800&h=600&fit=crop",
+    category: "Sport",
+    brand: "TVS",
+    description: "The Apache RTR 160 4V is a performance-oriented commuter with racing DNA.",
+    rating: 4.4,
+    discountPercentage: 5,
+    available: true,
+    slug: "tvs-apache-rtr-160-4v",
+    specifications: {
+      engine: "159.7cc, Single-Cylinder",
+      power: "17.5 bhp",
+      torque: "14.73 Nm",
+      topSpeed: "125 km/h",
+      weight: "147 kg",
+      fuelCapacity: "12 liters"
+    }
+  },
+  {
+    id: 44,
+    name: "Yamaha R3",
+    price: 410000,
+    image: "https://images.unsplash.com/photo-1611241523828-61aea437dd81?w=800&h=600&fit=crop",
+    category: "Sport",
+    brand: "Yamaha",
+    description: "The Yamaha R3 is a twin-cylinder sport bike that offers balanced performance for beginners and enthusiasts.",
+    rating: 4.5,
+    available: true,
+    slug: "yamaha-r3",
+    specifications: {
+      engine: "321cc, Parallel-Twin",
+      power: "42 bhp",
+      torque: "29.6 Nm",
+      topSpeed: "180 km/h",
+      weight: "167 kg",
+      fuelCapacity: "14 liters"
+    }
+  },
+  {
+    id: 45,
+    name: "Suzuki Gixxer SF 250",
+    price: 190000,
+    image: "https://images.unsplash.com/photo-1611241523477-06063345c4ca?w=800&h=600&fit=crop",
+    category: "Sport",
+    brand: "Suzuki",
+    description: "The Gixxer SF 250 is a fully-faired sport bike with a refined single-cylinder engine.",
+    rating: 4.4,
+    available: true,
+    slug: "suzuki-gixxer-sf-250",
+    specifications: {
+      engine: "249cc, Single-Cylinder",
+      power: "26.5 bhp",
+      torque: "22.2 Nm",
+      topSpeed: "155 km/h",
+      weight: "161 kg",
+      fuelCapacity: "12 liters"
+    }
+  },
+  {
+    id: 46,
+    name: "Triumph Rocket 3",
+    price: 2150000,
+    image: "https://images.unsplash.com/photo-1611241523577-d5f95554ab14?w=800&h=600&fit=crop",
+    category: "Muscle",
+    brand: "Triumph",
+    description: "The Rocket 3 features the world's largest production motorcycle engine with enormous torque.",
+    rating: 4.8,
+    available: true,
+    slug: "triumph-rocket-3",
+    specifications: {
+      engine: "2458cc, Inline-3",
+      power: "167 bhp",
+      torque: "221 Nm",
+      topSpeed: "230 km/h",
+      weight: "291 kg",
+      fuelCapacity: "18 liters"
+    }
+  },
+  {
+    id: 47,
+    name: "Bajaj Pulsar N250",
+    price: 149000,
+    image: "https://images.unsplash.com/photo-1591634936742-4812246e584a?w=800&h=600&fit=crop",
+    category: "Sport",
+    brand: "Bajaj",
+    description: "The Pulsar N250 is a naked street fighter with a new-gen platform and powerful engine.",
+    rating: 4.3,
+    discountPercentage: 6,
+    available: true,
+    slug: "bajaj-pulsar-n250",
+    specifications: {
+      engine: "249.07cc, Single-Cylinder",
+      power: "24.5 bhp",
+      torque: "21.5 Nm",
+      topSpeed: "140 km/h",
+      weight: "162 kg",
+      fuelCapacity: "14 liters"
+    }
+  },
+  {
+    id: 48,
+    name: "BMW G 310 GS",
+    price: 350000,
+    image: "https://images.unsplash.com/photo-1611241524149-59f4ec1bf75b?w=800&h=600&fit=crop",
+    category: "Adventure",
+    brand: "BMW",
+    description: "The G 310 GS is a compact adventure bike that makes adventure riding accessible.",
+    rating: 4.2,
+    available: true,
+    slug: "bmw-g-310-gs",
+    specifications: {
+      engine: "313cc, Single-Cylinder",
+      power: "34 bhp",
+      torque: "28 Nm",
+      topSpeed: "143 km/h",
+      weight: "175 kg",
+      fuelCapacity: "11 liters"
+    }
+  },
+  {
+    id: 49,
+    name: "Ducati Scrambler",
+    price: 925000,
+    image: "https://images.unsplash.com/photo-1611241523846-5fc47a25add4?w=800&h=600&fit=crop",
+    category: "Scrambler",
+    brand: "Ducati",
+    description: "The Scrambler combines classic styling with modern performance for urban adventures.",
+    rating: 4.5,
+    available: true,
+    slug: "ducati-scrambler",
+    specifications: {
+      engine: "803cc, L-Twin",
+      power: "73 bhp",
+      torque: "66.2 Nm",
+      topSpeed: "200 km/h",
+      weight: "189 kg",
+      fuelCapacity: "13.5 liters"
+    }
+  },
+  {
+    id: 50,
+    name: "KTM 790 Adventure",
+    price: 1250000,
+    image: "https://images.unsplash.com/photo-1611241523409-fd73bb7e43a0?w=800&h=600&fit=crop",
+    category: "Adventure",
+    brand: "KTM",
+    description: "The 790 Adventure offers exceptional off-road performance with long-range touring ability.",
+    rating: 4.7,
+    discountPercentage: 4,
+    available: true,
+    slug: "ktm-790-adventure",
+    specifications: {
+      engine: "799cc, Parallel-Twin",
+      power: "95 bhp",
+      torque: "88 Nm",
+      topSpeed: "210 km/h",
+      weight: "189 kg",
+      fuelCapacity: "20 liters"
+    }
+  },
+  {
+    id: 51,
+    name: "Royal Enfield Scram 411",
+    price: 208000,
+    image: "https://images.unsplash.com/photo-1604831926403-b49d5dda6e29?w=800&h=600&fit=crop",
+    category: "Scrambler",
+    brand: "Royal Enfield",
+    description: "The Scram 411 is a more road-focused derivative of the Himalayan adventure bike.",
+    rating: 4.2,
+    available: true,
+    slug: "royal-enfield-scram-411",
+    specifications: {
+      engine: "411cc, Single-Cylinder",
+      power: "24.3 bhp",
+      torque: "32 Nm",
+      topSpeed: "130 km/h",
+      weight: "185 kg",
+      fuelCapacity: "15 liters"
+    }
+  },
+  {
+    id: 52,
+    name: "Honda H'ness CB350",
+    price: 198000,
+    image: "https://images.unsplash.com/photo-1611241523902-b4c64d0358da?w=800&h=600&fit=crop",
+    category: "Modern Classic",
+    brand: "Honda",
+    description: "The H'ness CB350 combines retro charm with modern technology in a middleweight package.",
+    rating: 4.4,
+    available: true,
+    slug: "honda-hness-cb350",
+    specifications: {
+      engine: "348.36cc, Single-Cylinder",
+      power: "21 bhp",
+      torque: "30 Nm",
+      topSpeed: "135 km/h",
+      weight: "181 kg",
+      fuelCapacity: "15 liters"
+    }
+  },
+  {
+    id: 53,
+    name: "Yamaha MT-09",
+    price: 980000,
+    image: "https://images.unsplash.com/photo-1611241523537-14c78981a2f5?w=800&h=600&fit=crop",
+    category: "Naked",
+    brand: "Yamaha",
+    description: "The MT-09 is a dynamic naked bike with a three-cylinder engine offering exhilarating performance.",
+    rating: 4.7,
+    discountPercentage: 3,
+    available: true,
+    slug: "yamaha-mt-09",
+    specifications: {
+      engine: "890cc, Inline-3",
+      power: "117.3 bhp",
+      torque: "93 Nm",
+      topSpeed: "240 km/h",
+      weight: "193 kg",
+      fuelCapacity: "14 liters"
+    }
+  },
+  {
+    id: 54,
+    name: "Suzuki GSX-S750",
+    price: 780000,
+    image: "https://images.unsplash.com/photo-1611241523379-103439dfce03?w=800&h=600&fit=crop",
+    category: "Naked",
+    brand: "Suzuki",
+    description: "The GSX-S750 is a middleweight street fighter with sportbike DNA and all-round performance.",
+    rating: 4.5,
+    available: true,
+    slug: "suzuki-gsx-s750",
+    specifications: {
+      engine: "749cc, Inline-4",
+      power: "114 bhp",
+      torque: "81 Nm",
+      topSpeed: "230 km/h",
+      weight: "213 kg",
+      fuelCapacity: "16 liters"
+    }
+  },
+  {
+    id: 55,
+    name: "Kawasaki Vulcan S",
+    price: 650000,
+    image: "https://images.unsplash.com/photo-1611241523702-e55f0c892504?w=800&h=600&fit=crop",
+    category: "Cruiser",
+    brand: "Kawasaki",
+    description: "The Vulcan S is a modern cruiser with ergonomic customization options for various rider sizes.",
+    rating: 4.3,
+    available: true,
+    slug: "kawasaki-vulcan-s",
+    specifications: {
+      engine: "649cc, Parallel-Twin",
+      power: "61 bhp",
+      torque: "63 Nm",
+      topSpeed: "185 km/h",
+      weight: "235 kg",
+      fuelCapacity: "14 liters"
+    }
+  },
+  {
+    id: 56,
+    name: "TVS Apache RTR 200 4V",
+    price: 139000,
+    image: "https://images.unsplash.com/photo-1633528859437-38a162c36cc2?w=800&h=600&fit=crop",
+    category: "Sport",
+    brand: "TVS",
+    description: "The Apache RTR 200 4V offers race-tuned performance with advanced features and technology.",
+    rating: 4.4,
+    discountPercentage: 5,
+    available: true,
+    slug: "tvs-apache-rtr-200-4v",
+    specifications: {
+      engine: "197.75cc, Single-Cylinder",
+      power: "20.8 bhp",
+      torque: "17.25 Nm",
+      topSpeed: "127 km/h",
+      weight: "152 kg",
+      fuelCapacity: "12 liters"
+    }
+  },
+  {
+    id: 57,
+    name: "Harley-Davidson Iron 883",
+    price: 980000,
+    image: "https://images.unsplash.com/photo-1613663913220-255112896a69?w=800&h=600&fit=crop",
+    category: "Cruiser",
+    brand: "Harley-Davidson",
+    description: "The Iron 883 is a classic Sportster with stripped-down, blacked-out styling and authentic character.",
+    rating: 4.5,
+    available: true,
+    slug: "harley-davidson-iron-883",
+    specifications: {
+      engine: "883cc, V-Twin",
+      power: "50 bhp",
+      torque: "68 Nm",
+      topSpeed: "160 km/h",
+      weight: "247 kg",
+      fuelCapacity: "12.5 liters"
+    }
+  },
+  {
+    id: 58,
+    name: "BMW K 1600 GTL",
+    price: 2980000,
+    image: "https://images.unsplash.com/photo-1611241524169-8deb443447af?w=800&h=600&fit=crop",
+    category: "Touring",
+    brand: "BMW",
+    description: "The K 1600 GTL is a luxury touring motorcycle with a six-cylinder engine and premium amenities.",
+    rating: 4.9,
+    available: true,
+    slug: "bmw-k-1600-gtl",
+    specifications: {
+      engine: "1649cc, Inline-6",
+      power: "160 bhp",
+      torque: "175 Nm",
+      topSpeed: "250 km/h",
+      weight: "352 kg",
+      fuelCapacity: "26.5 liters"
+    }
+  },
+  {
+    id: 59,
+    name: "Ducati Diavel",
+    price: 1850000,
+    image: "https://images.unsplash.com/photo-1611241523939-4224cf62f69d?w=800&h=600&fit=crop",
+    category: "Power Cruiser",
+    brand: "Ducati",
+    description: "The Diavel combines cruiser comfort with superbike performance in a unique package.",
+    rating: 4.7,
+    discountPercentage: 3,
+    available: true,
+    slug: "ducati-diavel",
+    specifications: {
+      engine: "1262cc, L-Twin",
+      power: "162 bhp",
+      torque: "129 Nm",
+      topSpeed: "250 km/h",
+      weight: "218 kg",
+      fuelCapacity: "17 liters"
+    }
+  },
+  {
+    id: 60,
+    name: "Triumph Bonneville T120",
+    price: 1050000,
+    image: "https://images.unsplash.com/photo-1611241523896-1e38cda49252?w=800&h=600&fit=crop",
+    category: "Modern Classic",
+    brand: "Triumph",
+    description: "The Bonneville T120 is a modern interpretation of the iconic 1959 classic with authentic styling.",
+    rating: 4.6,
+    available: true,
+    slug: "triumph-bonneville-t120",
+    specifications: {
+      engine: "1200cc, Parallel-Twin",
+      power: "80 bhp",
+      torque: "105 Nm",
+      topSpeed: "190 km/h",
+      weight: "224 kg",
+      fuelCapacity: "14.5 liters"
+    }
+  }
+];
+
+// Function to get all products
+export const getProducts = () => productsData;
+
+// Function to get featured products
+export const getFeaturedProducts = () => productsData.filter(product => product.featured);
+
+// Function to get product by slug
+export const getProductBySlug = (slug: string) => productsData.find(product => product.slug === slug);
+
+// Function to get related products - same category or brand, excluding current product
+export const getRelatedProducts = (product: Product) => {
+  return productsData
+    .filter(p => p.id !== product.id && (p.category === product.category || p.brand === product.brand))
+    .slice(0, 4);
+};
